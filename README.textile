@@ -1,0 +1,25 @@
+h2. What is this?
+
+This plugin is for people that want label less form fields. You can currently use this to reset default values and set default values. Pretty simple. I'm hoping to expand this further in the future to support selects as well as the text, textarea, and password fields it supports now.
+
+h2. Why?
+
+I got tired of labels, hadn't tried this before, and I had a spare evening. Oh you mean why use this plugin!
+
+h2. Usage
+
+To use it just include the javascript in your html and call the following:
+
+<pre>
+  $("#my-field-id").DefaultValue("Please give me a useful value");
+</pre>
+
+This can be useful for some of the trickier things like replacement javascript where the form is built dynamically but only one copy of a given field is allowed at once. If you need to overwrite an existing one you can simply reset the value and set the default again like so:
+
+<pre>
+  $("#my-field-id").ResetValue().DefaultValue("Please give me a useful value");
+</pre>
+
+h2. Questions?
+
+Please feel free to file an issue or comment on the commits if you have any problems or modification requests. I watch all my projects daily.
