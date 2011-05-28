@@ -79,7 +79,7 @@ jQuery.fn.DefaultValue = function(text)
     {
       $( this ).submit( function()
       {
-        if( !(field.value == text || field.value == '') ){ current_field.value = ''; }
+        if( !(current_field.value == text || current_field.value == '') ){ current_field.value = ''; }
       });
     });
     
